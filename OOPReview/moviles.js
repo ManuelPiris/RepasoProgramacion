@@ -22,6 +22,46 @@ var Mobile = /** @class */ (function () {
             "Número de camaras: " + (this.cameraNumber) + "\n" +
             "Precio: " + (this.price) + "\n");
     };
+    Mobile.prototype.PrintModifi = function () {
+        console.log("The characteristics of the mobile " + (this.name) + " are: " + "\n" +
+            "Name:" + (this.name) + "\n" +
+            "Model: " + (this.model) + "\n" +
+            "Trademark: " + (this.trademark) + "\n" +
+            "SD Size (GB): " + (this.sdSize) + "\n" +
+            "Color: " + (this.color) + "\n" +
+            "Is 5G?: " + (this.is5G) + "\n" +
+            "Number of Cameras: " + (this.cameraNumber) + "\n");
+    };
+    Mobile.prototype.getName = function () {
+        return this.name;
+    };
+    Mobile.prototype.setName = function (name) {
+        this.name = name;
+    };
+    Mobile.prototype.getModel = function () {
+        return this.model;
+    };
+    Mobile.prototype.setModel = function (model) {
+        this.model = model;
+    };
+    Mobile.prototype.getTrademark = function () {
+        return this.trademark;
+    };
+    Mobile.prototype.setTrademark = function (trademark) {
+        this.trademark = trademark;
+    };
+    Mobile.prototype.getsdSize = function () {
+        return this.sdSize;
+    };
+    Mobile.prototype.setsdSize = function (sdSize) {
+        this.sdSize = sdSize;
+    };
+    Mobile.prototype.getColor = function () {
+        return this.color;
+    };
+    Mobile.prototype.setColor = function (color) {
+        this.color = color;
+    };
     Mobile.prototype.getCameraNum = function () {
         return this.cameraNumber;
     };
@@ -33,6 +73,12 @@ var Mobile = /** @class */ (function () {
     };
     Mobile.prototype.get5G = function () {
         return this.is5G;
+    };
+    Mobile.prototype.getPrice = function () {
+        return this.price;
+    };
+    Mobile.prototype.setPrice = function (price) {
+        this.price = price;
     };
     return Mobile;
 }());
